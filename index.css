@@ -1,0 +1,115 @@
+html {
+	font-size: 100%;
+	}
+
+	/* Stil oppsett for Body */
+	body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: black;
+	}
+
+	/* Stil oppsett for Header */
+	header {
+	background-color: black;
+	height: 8rem;
+	border-bottom: 1px solid red;
+	color: white;
+	}
+
+	/* Stil oppsett for last opp knappen */
+	#skjema button{
+		cursor: pointer;
+	}
+
+	/* Stil oppsett for skjemaet i headeren */
+	header #skjema {
+	padding: 1rem;
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 1rem;
+	}
+
+	/* Stil oppsett for text boksene */
+	#skjema input[type=text] {
+	padding: 0.5rem;
+	max-width: 10rem;
+	}
+	
+	/* Stil oppsett for tallene over boksene */
+	header label {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center; 
+	padding: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+	font-weight: 800;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	}
+	
+	/* stil for oppsettet av tekst boksene i header*/
+	header #skjema {
+		display: grid;
+		grid-template-rows: repeat(2, 2rem);
+	}
+	
+	/* Stil for oppsettet av bilde og info boksene
+	mer spesifikt grids.*/
+	main {
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 1rem;
+	}
+
+	/* Stil oppsettet for bilde og info boksene, men
+	farge på boks og text. Og korleis det vises*/
+	main article {
+	display: grid;
+	grid-auto-flow: row;
+	background-color: red;
+	cursor: pointer;
+	border: 1px solid red;
+	color: black;
+	}
+
+	/* Stil for bildet som vises*/
+	main img {
+	width: 100%;
+	}
+	
+	/* Stil for teksten inne i boksen*/
+	main article p {
+	padding: 1rem;
+	text-align: center;
+	justify-self: center;
+	align-self: center; 
+	border-bottom: 1px solid black;
+	max-width: fill;
+	width: 100%;
+	}
+	
+	/* Stil oppsett for overlayet 
+	er ikkje i bruk akkuratt no*/
+	#overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: red;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	}
+	
+	/* Stil for bilde på overlay er ikkje i bruk*/
+	#overlay img {
+	width: 120px;
+	}
+

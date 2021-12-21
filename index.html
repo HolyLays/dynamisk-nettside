@@ -1,7 +1,64 @@
 <!DOCTYPE html>
-<html>
-<body>
-    <h1>Hello World</h1>
-    <p>imgndjnh </p>
-</body>
-</html>
+<html lang="no">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dynamisk Nettside</title>
+	<!-- Link til CSS Dokumentet -->
+	<link rel="stylesheet" href="./index.css">
+	</head>
+	<body>
+	
+	<header>
+		<!-- Knappene og input boksene-->
+	<form id="skjema">
+	<label>1</label>
+	<input type="file" id="inpBilde" required>
+	<label>2</label>
+	<input type="text" id="inpTekst" required placeholder="Beskriv bildet">
+	<label>3</label>
+	<input type="date" id="Dato" required placeholder="Dato">
+	<label>4</label>
+	<input type="text" id="inpNamn" required placeholder="Namn">
+	<label>5</label>
+	<input type="number" id="inpTel" required placeholder="telefon nr">
+	<label>6</label>
+	<input type="text" id="inpEpost" required placeholder="E-post">
+	<label>7</label>
+	<button type="submit">Last opp</button>
+	<a href="https://wireframe.cc/kjuRES" target="_blank">Wireframe</a>
+	</form>
+	</header>
+	
+	<main></main>
+	
+	<div id="overlay">
+	
+	</div>
+	
+	
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase.js"></script>
+    <script>
+        // Firebase contact info
+		const firebaseConfig = {
+		apiKey: "AIzaSyApmbtvg_mxkZw3Rftxt6YBsvyHWfnjCVo",
+		authDomain: "bildeopplastning-4cbba.firebaseapp.com",
+		databaseURL: "https://bildeopplastning-4cbba-default-rtdb.firebaseio.com",
+		projectId: "bildeopplastning-4cbba",
+		storageBucket: "bildeopplastning-4cbba.appspot.com",
+		messagingSenderId: "213402128471",
+		appId: "1:213402128471:web:22660560aadd53a187d312"
+		};
+        firebase.initializeApp(firebaseConfig);
+	
+    </script>
+	<!-- link til JS Dokumentet -->
+	<script src="./index.js"></script>
+	
+	
+
+	
+    </body>
+	
+    </html>
